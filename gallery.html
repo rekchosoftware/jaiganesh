@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  background-color: #eee;
+}
+.hello {
+  opacity: 1 !important;
+}
+.full {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.full .content {
+  background-color: rgba(0,0,0,0.75) !important;
+  height: 100%;
+  width: 100%;
+  display: grid;
+}
+.full .content img {
+  left: 50%;
+  transform: translate3d(0, 0, 0);
+  animation: zoomin 1s ease;
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+}
+.byebye {
+  opacity: 0;
+}
+.byebye:hover {
+  transform: scale(0.2) !important;
+}
+.gallery {
+  display: grid;
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: 8px;
+}
+.gallery img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 16px #333;
+  transition: all 1.5s ease;
+}
+.gallery img:hover {
+  box-shadow: 0 0 32px #333;
+}
+.gallery .content {
+  padding: 4px;
+}
+.gallery .gallery-item {
+  transition: grid-row-start 300ms linear;
+  transition: transform 300ms ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+.gallery .gallery-item:hover {
+  transform: scale(1.025);
+}
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  }
+}
+@media (max-width: 400px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+  }
+}
+@-moz-keyframes zoomin {
+  0% {
+    max-width: 50%;
+    transform: rotate(-30deg);
+    filter: blur(4px);
+  }
+  30% {
+    filter: blur(4px);
+    transform: rotate(-80deg);
+  }
+  70% {
+    max-width: 50%;
+    transform: rotate(45deg);
+  }
+  100% {
+    max-width: 100%;
+    transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes zoomin {
+  0% {
+    max-width: 50%;
+    transform: rotate(-30deg);
+    filter: blur(4px);
+  }
+  30% {
+    filter: blur(4px);
+    transform: rotate(-80deg);
+  }
+  70% {
+    max-width: 50%;
+    transform: rotate(45deg);
+  }
+  100% {
+    max-width: 100%;
+    transform: rotate(0deg);
+  }
+}
+@-o-keyframes zoomin {
+  0% {
+    max-width: 50%;
+    transform: rotate(-30deg);
+    filter: blur(4px);
+  }
+  30% {
+    filter: blur(4px);
+    transform: rotate(-80deg);
+  }
+  70% {
+    max-width: 50%;
+    transform: rotate(45deg);
+  }
+  100% {
+    max-width: 100%;
+    transform: rotate(0deg);
+  }
+}
+@keyframes zoomin {
+  0% {
+    max-width: 50%;
+    transform: rotate(-30deg);
+    filter: blur(4px);
+  }
+  30% {
+    filter: blur(4px);
+    transform: rotate(-80deg);
+  }
+  70% {
+    max-width: 50%;
+    transform: rotate(45deg);
+  }
+  100% {
+    max-width: 100%;
+    transform: rotate(0deg);
+  }
+}
+
+</style>  
+
+
+</head>
+<body>
+<a href="index.html"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+    <h1>Wall Putty and Paintings</h1>
+
+    <div class="gallery" id="gallery">
+        <div class="gallery-item">
+            <div class="content"><img src="http://ghar360.com/blogs/wp-content/uploads/486.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://i.ytimg.com/vi/TKhXh97jNNY/hqdefault.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="http://ghar360.com/blogs/wp-content/uploads/292.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://www.buzzle.com/images/home-decor/living-room/bird-nest-wall-design-for-teal-living-room.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://4.imimg.com/data4/IC/SE/FUSIONI-37846333/prod-image-500x500.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://www.ofdesign.net/wp-content/uploads/files/1/0/9/paint-the-walls-21-creative-ideas-wall-templates-including-instructions-2-109.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://i.ytimg.com/vi/Vy2y18plWks/maxresdefault.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://nipponpaint.co.in/wp-content/uploads/2019/01/Vibrant-interior-Wall-colours.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="http://www.furnitureteams.com/server12-cdn/2016/05/15/wall-painting-techniques-examples-interior-wall-painting-design-ideas-lime-light-green-paint-color-400x322-ce51f0233addc98f.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="http://3.bp.blogspot.com/-tFLJzFTWHd4/TkOzSX8Ep6I/AAAAAAAAADU/LO8CU_IiUwc/s640/Living-Room-Wall-Decorating-Ideas7.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="https://i.pinimg.com/originals/63/a1/bb/63a1bb45452232b10266ba374c91c077.jpg" alt=""></div>
+        </div>
+        <div class="gallery-item">
+            <div class="content"><img src="http://1.bp.blogspot.com/-EXyozZTgAHM/UDk7sK90xmI/AAAAAAAAFBk/DuEtA1beD-A/s1600/Different+wall+finishes+for+the+interior+design+of+your+bedroom++Behr-Paint-Colors-Ideas.jpg" alt=""></div>
+        </div>
+        
+    </div>
+<script>
+var gallery = document.querySelector('#gallery');
+var getVal = function (elem, style) { return parseInt(window.getComputedStyle(elem).getPropertyValue(style)); };
+var getHeight = function (item) { return item.querySelector('.content').getBoundingClientRect().height; };
+var resizeAll = function () {
+    var altura = getVal(gallery, 'grid-auto-rows');
+    var gap = getVal(gallery, 'grid-row-gap');
+    gallery.querySelectorAll('.gallery-item').forEach(function (item) {
+        var el = item;
+        el.style.gridRowEnd = "span " + Math.ceil((getHeight(item) + gap) / (altura + gap));
+    });
+};
+gallery.querySelectorAll('img').forEach(function (item) {
+    item.classList.add('byebye');
+    if (item.complete) {
+        console.log(item.src);
+    }
+    else {
+        item.addEventListener('load', function () {
+            var altura = getVal(gallery, 'grid-auto-rows');
+            var gap = getVal(gallery, 'grid-row-gap');
+            var gitem = item.parentElement.parentElement;
+            gitem.style.gridRowEnd = "span " + Math.ceil((getHeight(gitem) + gap) / (altura + gap));
+            item.classList.remove('byebye');
+        });
+    }
+});
+window.addEventListener('resize', resizeAll);
+gallery.querySelectorAll('.gallery-item').forEach(function (item) {
+    item.addEventListener('click', function () {        
+        item.classList.toggle('full');        
+    });
+});
+
+</script>     
+</body>
+</html>

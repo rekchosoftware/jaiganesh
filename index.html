@@ -1,0 +1,167 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap" rel="stylesheet">
+<style>
+@media only screen and (max-device-width: 500px) {
+        .container{
+         flex-direction: column !important;
+         max-width: 400px !important;
+         height: 670px !important;
+         margin-left:1% !important;
+         border-radius: 6px;
+       
+    }
+    a:-webkit-any-link {
+        cursor: none;
+    }
+    .footer{
+		margin-top:5% !important;
+		height:80px !important;
+		background:grey;
+		text-align:center;
+	}
+	
+	
+}
+
+
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background: #f1f1f1;
+    font-family: arial;
+    box-sizing: border-box;
+    }
+    .container{
+		width: 380px;
+		height: 620px;
+		background: white;
+		border-radius: 5px;
+		position: absolute;
+		top: 50%;
+		left: 53%;
+		transform: translate(-50%,-50%);
+		box-shadow: 0px 1px 10px 1px #000;
+		overflow: hidden;
+		display: inline-block;
+    }
+    .upper-container{
+		height:40%;
+		position: relative; 
+		left: 0;
+		top: 0;
+    }
+    .details{
+		margin-top:12% !important;
+		text-align:center !important;
+	}
+	.details>h1{
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 800;
+		font-size: 25px;
+		margin-top: -5%;
+	}
+	.details>h5{
+		margin-top:-3%;
+		font-family: 'Lato', sans-serif !important;
+		font-weight: 900 !important;
+	}
+	.social-icon{
+		flex-direction:row;
+		margin-top:-1%;
+	}
+	.social-icon>a{
+		margin-left:5%;
+	}
+	.social-icon>a>img{
+		width:50px;
+		height:50px;
+	}
+	.btn{
+		margin-top:2%;
+		border:none;
+		width:40% !important;
+		height:50px;
+		color:white;
+		background-color:grey;
+		font-size:20px;
+		border-radius:30px;
+		text-align:center;
+		margin-left:6%;
+		box-shadow: 0 13px 26px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.16);
+	}
+	.btn1{
+		margin-top:-13%;
+		border:none;
+		width:40% !important;
+		height:50px;
+		color:white;
+		background-color:grey;
+		font-size:20px;
+		border-radius:30px;
+		text-align:center;
+		margin-left:55%;
+		box-shadow: 0 13px 26px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.16);
+	}
+	.footer{
+		margin-top:3%;
+		height:60px;
+		background:darkgrey;
+		text-align:center;
+	}
+</style>
+</head>
+<body>
+		<div class="container">
+		
+			<div class="upper-container">
+				<img src="banner.jpg" style="width:100%;height:100%;position:relative;top:0;left:0">
+				<img src="share.png" style="position:relative;width:50px;height:50px;margin-left:83%;margin-top:-5%" id="button">
+				<img src="msg.png" style="position:relative;width:50px;height:50px;margin-top:-13% !important;left:2%">	
+			</div>
+			<div class="details">
+				<h1 >Jai Ganesh Amulraj</h1>
+				<h5>KAYYAR ENTERPRICES</h5>
+			</div>
+			<div class="about">
+				<p style="padding-left: 10px;padding-right: 10px;margin-top: -5%;text-align: justify;font-family: 'Lato', sans-serif;font-weight: 400">We make your homes vibrant like your Heart. We sell all kinds of Wall putty and Painting's Product. Have some paint and Brush Let the world will shine with your colourful thoughts towards us.</p>
+			</div>
+
+			<div class="social-icon">
+				<a href="tel:+91 98432 88810" style="margin-left: 22%"><img src="call.png"></a>
+				<a href="https://api.whatsapp.com/send?phone=+919843288810"><img src="whatsapp.png"></a>
+				<a href="mailto:kayyargroupo@gmail.com"><img src="mail.png"></a>
+			</div>
+				<button class="btn"><a href="gallery.html" style="color: white;text-decoration: none;">View Gallery</a></button>
+				<button class="btn1"><a href="upi://pay?pa=9843288810@okbizaxis&pn=Kayyar%20Enterprises&mc=7311&aid=uGICAgIDjmbThLA&tr=BCR2DN6T3OZZNTYX"style="color: white;text-decoration: none;">Payment</a></button>
+				<h1 style="font-size:15px;margin-top:1%;text-align: center;">Designed by <a href="http://kishorebabu.rekchosoftware.com/">Rekcho</a></h1>	
+			<div class="footer">
+				<img src="logo.png" style="width: 18%;height:80%;margin-top:2%">
+			</div>	
+		</div>
+<script>
+    const $button = document.querySelector('#button')
+    if ('share' in navigator) {
+      $button.addEventListener('click', share)
+      function share() {
+        navigator.share({
+          title: '',
+          text: 'Rekcho Software',
+          url: 'http://demo2.rekchosoftware.com/',
+        })
+        .then(()=>{
+          alert('Not  supported u browser')
+        })
+        .catch(()=>{
+                })
+      }
+    } 
+  </script>
+</body>
+</html>
